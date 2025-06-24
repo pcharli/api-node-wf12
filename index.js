@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 import fs from 'fs-extra'
 import cors from 'cors'
+import doc from './doc'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,7 +23,7 @@ const writeData = async (data) => await fs.writeJson(J_FILE, data, {space:2})
 const readData = async () => await fs.readJson(J_FILE)
 
 app.get('/', (req, res) => {
-    res.json({"documentation":"blabla"})
+    res.json(doc)
 })
 
 // TODOS
