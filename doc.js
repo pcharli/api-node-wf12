@@ -1,4 +1,5 @@
 export default doc = {
     "title": "ma doc",
-    "body": "lorem ipsum"
+    "body": "lorem ipsum",
+    "author": "Pierre"
 }
