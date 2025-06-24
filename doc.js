@@ -1,3 +1,3 @@
-export default doc = {
+export const doc = {
     "title": "ma doc"
 }
